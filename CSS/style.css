@@ -1,0 +1,621 @@
+*{
+    Margin: 0;
+	Padding: 0;
+	Box-sizing: border-box; 
+}
+@font-face {
+    font-family: Tommy;
+    src: url(../Fonts/MADE\ TOMMY\ Bold_PERSONAL\ USE.otf);
+}
+@font-face {
+    font-family: bogart;
+    src: url(../Fonts/Bogart-Bold-trial.ttf);
+}
+
+a{
+    text-decoration: none;
+    color: white;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
+
+.items{
+    display: inline-block;
+    font-family: sans-serif;
+    padding: 5px 10px;
+    font-size: 3rem;
+    border-radius: 2rem;
+}
+.items:hover{
+    background-color: rgb(166, 166, 166);
+}
+
+.pages{
+    text-decoration: none;
+    font-family: Tommy;
+    font-size: 2.5rem; 
+    color: blanchedalmonds;
+}
+.pages:hover{
+    color: #222725;
+}
+.Menu{ 
+    padding: 1rem;
+    background-color: #222725;
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.navegacion1{
+    list-style-type: none;
+    color: aliceblue;
+    margin-right: 3rem;
+}
+.navegacion2{
+    list-style-type: none;
+    color: aliceblue;
+    margin-left: 200px;
+}
+
+.imagen{
+    width: 12rem;
+    height: 12rem;
+    background-color: #222725;
+    position: absolute;
+    align-items: center;
+}
+
+.principal_page{ 
+    background-image: url(../images/barber.jpg);
+    background-size: 100vw 100vh;
+    background-repeat: no-repeat;
+    display: flex;
+    flex-flow: column wrap;
+    width: 100vw;
+    
+}
+
+.titulo1{ 
+    min-height: 100px;
+    font-size: 6rem;
+    margin: 0rem 7rem 0rem 7rem;
+    padding: 8rem 4rem; 
+    text-align: center; 
+    display: inline-block;   
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: rgb(179, 179, 179);
+}
+
+.titulo2{ 
+    font-size: 6rem;
+    margin: 0rem; 
+    padding: 8rem 6rem;
+    text-align: center;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: white;
+    
+}
+
+h1{ 
+    font-family: bogart;
+}
+
+h2{
+    font-family: bogart;
+}
+
+h3{
+    color: darkslategray;
+    font-size: 2.5rem;
+    font-family: Tommy;
+}
+h4{
+    color: black;
+    font-size: 1.5rem;
+    font-family: Tommy;
+}
+p{
+    font-family: Tommy;
+}
+main{
+    background-color: #c2c2c2;
+}
+.pie{
+    background-color: rgb(196, 194, 194);
+    background-size: 3rem;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    border-top: black;
+    border-top-width: 3px;
+    border-top-style: solid;
+    width: 100vw;
+}
+
+.seguinos{
+    font-size: 3rem;
+    font-family: Tommy;
+    color: cornsilk;
+    text-align: center;
+    display: inline-block;  
+    -webkit-text-stroke: 2.5px;
+    -webkit-text-stroke-color: #163535;
+}
+
+.instagram{
+    height: 60px;
+    width: 60px;
+    display: inline-block;
+    margin-left: 1rem;
+    position: relative;
+    
+}
+
+.la_pelu {
+    margin-top: 2rem;
+    margin-left: 1rem;
+    max-width: 80vh;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 30% 30% 30%;
+    grid-template-areas: 
+        "veni atencion"
+        "veni carrusel"
+        "veni carrusel";
+    gap: 1rem;
+    
+}
+
+.fotos_pelu {
+    width: 48vw;
+    border-radius: 2rem;
+}
+
+.titulos_pages {
+    font-size: 4rem;
+    font-family: Tommy;
+    color: black;
+    text-align: left;
+    margin-left: 3rem;
+
+}
+.carrusel{
+    grid-area: carrusel;
+    padding-bottom: 2rem;
+    width: 40vw;
+    padding-left: 5rem;
+}
+.botones{
+    margin-left: 5rem;
+}
+
+.foto1 {
+    grid-area: foto1;
+}
+.foto2 {
+    grid-area: foto2;
+}
+.foto3 {
+    grid-area: foto3;
+}
+.foto4 {
+    grid-area: foto4;
+}
+.veni{
+    grid-area: veni;
+    margin-left: 1rem;
+}
+.atencion{
+    grid-area: atencion;
+    margin-left: 1rem;
+}
+
+.veni {
+    margin-left: 1rem;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    background-color: rgb(255, 255, 255);
+    border: #163535;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .5rem;
+}
+.invitacion{
+    font-size: 3.5rem;
+    text-align: center;
+}
+.direccion{
+    font-size: 2rem;
+}
+.mapa{
+    border: #222725;
+    border-style: solid;
+    border-width: 0.5rem;
+}
+
+.atencion{
+    margin-right: 1rem;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 2rem;
+    background-color:#163535;
+    border: #5a7979;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .5rem;
+    padding-top: 2rem;
+}
+
+.horarios{
+    font-size: 3.5rem;
+    color: beige;
+    text-decoration: underline;
+}
+
+.dias{
+    color: rgb(239, 200, 150);
+    font-size: 3rem;
+}
+
+.cerrado{
+    margin-left: 1rem;
+    width: 45vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    gap: 1rem;
+    background-color:#163535;
+    border: #5a7979;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .5rem;
+}
+
+.pelu_cerrada{
+    color: rgb(255, 255, 255);
+    font-size: 3rem;
+    text-align: center;
+}
+
+.pie_pages{
+    padding: 2rem;
+    background-color: rgb(154, 153, 153);
+    border-top: black;
+    border-top-width: 3px;
+    border-top-style: solid;
+}
+.lotos_pie{
+    font-size: 2rem;
+    color: black;
+}
+
+.servicios{
+    margin: 2rem 2rem 0rem 2rem;
+    padding: 1rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "cortes barba cejas"
+        "cortes barba cejas"
+        "cortes barba cejas";
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.cortes{
+    grid-area: cortes;
+    width: 30vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap:  .5rem;
+    margin-bottom: 2rem;
+    border: #151a1a;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .5rem;
+    background-color: rgb(231, 227, 227);
+}
+
+.barba{
+    grid-area: barba;
+    width: 30vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    border: #151a1a;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .5rem;
+    background-color: rgb(231, 227, 227);
+}
+
+.cejas{
+    grid-area: cejas;
+    width: 30vw;
+    padding: 1rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: .5rem;
+    margin-bottom: 2rem;
+    border: #151a1a;
+    border-radius: 1rem;
+    border-style: solid;
+    border-width: .5rem;
+    background-color: rgb(231, 227, 227);
+}
+
+.servicios_img{
+    width: 25vw;
+    height: 60vh;
+    padding: 1rem;
+
+}
+
+.títulos_servicios{
+    font-size: 3.5rem;
+}
+
+.barberos{
+    margin-top: 2rem;
+    padding: 3rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.barbero1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barbero2{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.barbero3{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.imagen1{
+    padding: .5rem 2rem;
+}
+.imagen2{
+    padding: .5rem 2rem;
+}
+.imagen3{
+    padding: .5rem 2rem;
+}
+.info{
+    background-color: rgb(112, 112, 112);
+    margin-top: -2rem;
+    padding: .5rem 1.5rem;
+    border-radius: 2rem;
+    border-style: solid;
+    border-color: #151a1a;
+    border-width: .25rem;
+}
+.nombres{
+    color: white;
+}
+.barberos_fotos{
+    width: 20vw;
+    height: 25vw;
+    justify-items: center;
+}
+.redes_contacto{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.whatsapp{ 
+    padding: 2rem 2rem 2rem 0rem;
+    width: 48vw;
+}
+
+.numerowpp{
+    margin: 2rem 0rem;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content:center;
+    gap: .5rem;
+}
+.encontranos_ig{
+    text-align: center;
+}
+.escribinos{
+    text-align: center;
+}
+
+.wpplogo{
+    width: 200px;
+}
+.calendario{
+    width: 200px;
+}
+.numero{
+    font-size: 2.5rem;
+    color: rgb(0, 107, 32);
+    font-family: Tommy;
+}
+
+.redes_sociales{
+    padding: 2rem 1rem;
+    width: 45vw;
+}
+.imgcelu{
+    width: 250px;
+}
+.inforedes{
+    display: flex;
+    flex-direction: row;
+    align-items: center;    
+}
+.otras_redes{
+    display: flex;
+    flex-direction: column;
+}
+.logosredes{
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+.logos{
+    width: 120px;
+}
+.usuario{
+    font-size: 3rem;
+    font-family: Tommy;
+}
+
+
+@media (max-width: 1279px){
+    .navegacion1{
+        display: flex;
+        flex-direction: column;
+        justify-content: left;
+        margin-left: 10px;
+    }
+    .navegacion2{
+        display: flex;
+        flex-direction: column;
+        justify-content: right;
+        margin-right: 10px;
+    }
+}
+@media(max-width: 1150px){
+    .servicios{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    .cortes{
+        width: 75vw;        
+    }
+    .barba{
+        width: 75vw;
+    }
+    .cejas{
+        width: 75vw;
+    }
+    .servicios_img{
+        width: 60vw;
+        height: 70vh;
+        padding: 1rem;
+    
+    }
+    
+}
+@media (max-width: 950px){
+    .titulos_pages{
+        padding-top: 3rem;
+    }
+}
+@media (max-width: 850px) {
+    .Menu{
+        width: 100vw;
+        padding: 0.5rem;
+    }
+    .pages{
+        font-size: 2rem;
+    }
+    .titulo1{
+        font-size: 5rem;
+        margin: 0rem 1.5rem;
+        padding: 2rem 1rem;
+    }
+    .titulo2{
+        font-size: 5rem;
+        margin: 0rem; 
+        padding: 2rem 1rem;
+    }
+    .imagen{
+        width: 8rem;
+        height: 8rem;
+        background-color: #222725;
+        position: absolute;
+        align-items: center;
+    }
+}
+@media (max-width: 700px){
+    .pages{
+        font-size: 1rem;
+    }
+    .menu{
+        display: flex;
+        justify-content: center;
+        padding: 3rem;
+    }
+    .items{
+        font-size: 1.5rem;
+    }
+    .cortes{
+        height: 60vh;
+    }
+    .barba{
+        height: 60vh;
+    }
+    .cejas{
+        height: 60vh;
+    }
+    .servicios_img{
+        width: 60vw;
+        height: 50vh;
+        padding: 1rem;
+    
+    }
+}
+@media (max-width: 598px){
+    .titulo1{
+        font-size: 4.5rem;
+        margin: 2.5rem 1.5rem;
+        padding: 1rem .5rem;
+    }
+    .titulo2{
+        font-size: 4.5rem;
+        margin: 2rem;
+        padding: 1rem .5rem;
+    }
+    .items{
+        margin: 1rem 1.5rem;
+    }
+    .pie{
+        padding: 2rem 1rem;
+    }
+    .navegacion1{
+        margin-right: .5rem;
+    }
+    .navegacion2{
+        margin-left: 1rem;
+    }
+    .imagen{
+        position: relative;
+    }
+}
