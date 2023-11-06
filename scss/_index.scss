@@ -1,0 +1,95 @@
+.encabezado{
+    background-color: #222725;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 160px;
+    padding: 5px;
+
+    .imagen{
+        height: 150px;
+        width: auto;
+    }
+    .navegacion{
+        list-style: none;
+        color: aliceblue;
+
+        .items{
+            display: inline-block;
+            font-family: sans-serif;
+            padding: 5px;
+            font-size: 100%;
+            border-radius: 2rem;
+
+            &:hover{
+                background-color: rgb(166, 166, 166);
+            }
+        }
+        .pages{
+            text-decoration: none;
+            font-family: Tommy;
+            font-size: 300%; 
+            color: blanchedalmonds;
+
+            &:hover{
+                color: #222725;
+            }
+        }
+    }
+}
+main{
+    background-color: #c2c2c2;
+    .principal_page{ 
+        background-image: url(../images/barber.jpg);
+        background-size: 100% 100%;
+        background-repeat: no-repeat;
+        display: flex;
+        flex-flow: column wrap;
+        align-items: center;
+        justify-content: center;
+        width: 100vw;
+        height: 90vh;
+        
+        .titulo1{ 
+            font-size: 6rem;
+            margin: 3rem 0rem;
+            display: inline-block;
+            text-align: center; 
+            -webkit-text-stroke: 3px;
+            -webkit-text-stroke-color: rgb(179, 179, 179);
+        }
+        .titulo2{ 
+            font-size: 6rem;
+            margin-bottom: 3rem;
+            text-align: center;
+            -webkit-text-stroke: 3px;
+            -webkit-text-stroke-color: white;
+            
+        }
+    }
+}
+.pie{
+    background-color: rgb(100, 100, 100);
+    background-size: 3rem;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 20px;
+    border-top: black;
+    border-top-width: 3px;
+    border-top-style: solid;
+    width: 100vw;
+    margin: 0rem;
+
+    .seguinos{
+        font-size: 200%;
+        font-family: Tommy;
+        color: cornsilk;
+        text-align: center;
+    }
+    .instagram{
+        height: 40px;
+        width: 40px;
+    }
+}

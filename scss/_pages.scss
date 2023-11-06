@@ -1,0 +1,19 @@
+.titulos_pages {
+    font-size: 400%;
+    font-family: Tommy;
+    color: black;
+    text-align: center;
+    padding-top: 1rem;
+}
+.pie_pages{
+    padding: 2rem;
+    background-color: rgb(100, 100, 100);
+    border-top: black;
+    border-top-width: 3px;
+    border-top-style: solid;
+
+    .lotos_pie{
+        font-size: 2rem;
+        color: black;
+    }
+}

@@ -1,0 +1,98 @@
+.servicios{
+    margin: 2rem .5rem 0rem .5rem;
+    padding: 1rem 0rem;
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+
+    .cortes{
+        background-image: url(../images/cortes.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 30vw;
+        height: 80vh;
+        border: $color2;
+        border-style: solid;
+        border-width: .5rem;
+    }
+    .cortes:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .barba{
+        background-image: url(../images/barba.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: start;
+        width: 30vw;
+        height: 80vh;
+        border: $color2;
+        border-style: solid;
+        border-width: .5rem;
+    }
+    .barba:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+
+    .cejas{
+        background-image: url(../images/cejas.jpg);
+        background-position: 50%;
+        background-repeat: no-repeat;
+        background-size: cover;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        width: 30vw;
+        height: 80vh;
+        border: $color2;
+        border-style: solid;
+        border-width: .5rem;
+        
+    }
+    .cejas:hover{
+        transform: scale(1.1);
+        transition: 0.5s;
+    }
+    .diseños_cortes{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: max-content;
+        margin-top: 2rem;
+        padding-bottom: 2rem;
+
+        .texto-diseños{
+            text-align: center;
+            font-size: 300%;
+        }
+
+        .diseños{
+            width: 40vw;
+            height: auto;
+            border: $color2;
+            border-style: solid;
+            border-width: 1rem;
+        }
+    }
+}
+.títulos_servicios{
+    font-size: 400%;
+    color: #091313;
+    -webkit-text-stroke: 3px;
+    -webkit-text-stroke-color: #245050;
+}
